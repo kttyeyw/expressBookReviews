@@ -18,8 +18,7 @@ public_users.get('/', function(req, res) {
        return res.status(404).json({error: "there are no books"});
     }
 
-  //Write your code here
-  return res.status(300).json({message: "Yet to be implemented"});
+  //Write your code h
 });
 
 // Get book details based on ISBN
