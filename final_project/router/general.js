@@ -12,6 +12,13 @@ public_users.post("/register", (req,res) => {
 
 // Get the book list available in the shop
 public_users.get('/',function (req, res) {
+
+    if(books){
+       return res.send(JSON.stringify(books, null, 4));
+    } else{
+        return res.status(404).json({error: there are no books});
+    }
+
   //Write your code here
   return res.status(300).json({message: "Yet to be implemented"});
 });
